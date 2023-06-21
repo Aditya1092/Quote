@@ -1,0 +1,150 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #b9c7ff;
+}
+h3{
+  text-align: center;
+  padding: 0px 10px;
+  margin: 20px;
+  border-radius: 20px;
+  
+  border: 1px solid rgb(0, 0, 0);
+}
+.wrapper{
+  width: 605px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+header, .content :where(i, p, span){
+  color: #202842;
+}
+.wrapper header{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .content{
+  margin: 35px 0;
+}
+.content .quote-area{
+  display: flex;
+  justify-content: center;
+}
+.quote-area i{
+  font-size: 15px;
+}
+.quote-area i:first-child{
+  margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+.quote-area .quote{
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+.content .author{
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author span:first-child{
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+.wrapper .buttons{
+  border-top: 1px solid #ccc;
+}
+.buttons .features{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.features ul{
+  display: flex;
+}
+.features ul li{
+  margin: 0 5px;
+  background: linear-gradient(to right, #bca9ff, #a2ffe3);;
+  align-items: center;
+  justify-content: center;
+ 
+  
+  text-decoration: none;
+   
+  border: 2px solid;
+  color: #000000;
+  
+  list-style: none;
+  display: flex;
+  height: 47px;
+  width: 47px;
+  
+  cursor: pointer;
+
+  
+   
+  border-radius: 50%;
+   
+   
+  transition: all ease 0.4s;
+}
+.features ul li:first-child{
+  margin-left: 0;
+}
+ul li:is(:hover, .active){
+  color: #fff;
+  background: #bac8ff;
+}
+ul .speech.active{
+  pointer-events: none;
+}
+.buttons button{
+  text-decoration: none;
+  background:#ffcaca;
+  border: 1px solid;
+  color: #000000;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  display: inline-block;
+  min-width: 150px;
+  border-radius: 24px;
+  margin-top: 5px;
+  letter-spacing: 0.4px;
+  transition: all ease 0.4s;
+}
+.buttons button:hover{
+  color: #ffffff;
+    background: linear-gradient(to right, #bca9ff, #a2ffe3);
+    border:1px solid transparent;
+
+}
+
+.buttons button.loading{
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
